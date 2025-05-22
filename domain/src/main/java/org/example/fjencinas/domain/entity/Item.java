@@ -14,19 +14,8 @@ public class Item {
     private String name;
     private JsonNode data;
 
-    public static class ItemBuilder {
-        public Item build() {
-            Item item = Item.builder().uuid(UUID.randomUUID()).name(name).data(data).build();
-            if (!item.isValid()) {
-                throw new IllegalStateException("Invalid item");
-            }
-            return item;
-        }
+    public boolean isValid() {
+        return ObjectUtils.allNotNull(uuid, name, data) && StringUtils.isNotBlank(name);
     }
 
-    public boolean isValid() {
-        return ObjectUtils.allNotNull(uuid, name, data)
-                && StringUtils.isNotBlank(name)
-                && !data.isNull();
-    }
 }

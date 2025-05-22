@@ -5,15 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example.fjencinas</groupId>
-        <artifactId>hexagonal-architecture-example</artifactId>
+        <artifactId>infrastructure</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>infrastructure</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>h2-infrastructure</module>
-    </modules>
+    <artifactId>h2-infrastructure</artifactId>
 
     <properties>
         <maven.compiler.source>24</maven.compiler.source>
@@ -23,9 +19,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.example.fjencinas</groupId>
-            <artifactId>domain</artifactId>
-            <version>${project.parent.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 

@@ -4,20 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77b14a27-771a-4f9b-9155-1a1fde20dbb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/boot/src/main/java/org/example/fjencinas/boot/DemoApplication.java" afterDir="false" />
+    <list default="true" id="77b14a27-771a-4f9b-9155-1a1fde20dbb9" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/infrastructure/h2-infrastructure/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/fjencinas/application/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/org/example/fjencinas/application/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/org/example/fjencinas/application/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/fjencinas/application/ItemUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/example/fjencinas/application/ItemUseCaseImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot/src/main/java/org/example/fjencinas/boot/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot/src/test/java/org/example/fjencinas/boot/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot/src/test/java/org/example/fjencinas/boot/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/test/java/org/example/fjencinas/domain/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/org/example/fjencinas/domain/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/example/fjencinas/infrastructure/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/example/fjencinas/infrastructure/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot/src/main/java/org/example/fjencinas/boot/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot/src/main/java/org/example/fjencinas/boot/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot/src/test/java/org/example/fjencinas/boot/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/entity/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/repository/Create.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/repository/Create.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/fjencinas/infrastructure/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/example/fjencinas/infrastructure/AppTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,10 +62,11 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2xAVyIWSIok4f1Fq9accm2RrcpT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -72,15 +74,17 @@
   "keyToString": {
     "Application.DemoApplication.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.hexagonal-architecture-example [clean...].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Javi Encinas/.jdks/openjdk-24",
+    "onboarding.tips.debug.path": "C:/Users/Javi Encinas/intellij-idea-community-portable/workspace/hexagonal-architecture-example/infrastructure/src/main/java/org/example/fjencinas/Main.java",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "rearrange.code.on.save": "true",
     "settings.editor.selected.configurable": "actions.on.save"
   }
@@ -89,6 +93,11 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.fjencinas.domain.repository" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -119,6 +128,30 @@
       <option name="presentableId" value="Default" />
       <updated>1747381117953</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <option name="closed" value="true" />
+      <created>1747387088927</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747387088927</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/infrastructure/src/main/java/org/example/fjencinas/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
