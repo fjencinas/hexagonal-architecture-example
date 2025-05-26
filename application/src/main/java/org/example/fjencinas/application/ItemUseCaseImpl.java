@@ -2,17 +2,21 @@ package org.example.fjencinas.application;
 
 import lombok.RequiredArgsConstructor;
 import org.example.fjencinas.domain.entity.Item;
-import org.example.fjencinas.domain.repository.Create;
+import org.example.fjencinas.domain.repository.Read;
 import org.example.fjencinas.domain.usecase.ItemUseCase;
+import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
+@Service
 @RequiredArgsConstructor
 public class ItemUseCaseImpl implements ItemUseCase {
 
-    private final Create create;
+    private final Read read;
 
     @Override
-    public void MyItemUseCase(Item item) {
-        create.create(item);
+    public Optional<Item> findItem(Item item) {
+        return read.find(item.getCode());
     }
 
 }

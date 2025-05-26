@@ -2,8 +2,10 @@ package org.example.fjencinas.domain.usecase;
 
 import org.example.fjencinas.domain.entity.Item;
 
+import java.util.Optional;
+
 public interface ItemUseCase {
 
-    void MyItemUseCase(Item item);
+    Optional<Item> findItem(Item item);
 
 }

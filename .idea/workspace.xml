@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77b14a27-771a-4f9b-9155-1a1fde20dbb9" name="Changes" comment="Refactor project structure and update dependencies for h2-infrastructure module" />
+    <list default="true" id="77b14a27-771a-4f9b-9155-1a1fde20dbb9" name="Changes" comment="Refactor project structure and update dependencies for h2-infrastructure module">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/fjencinas/application/ItemUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/example/fjencinas/application/ItemUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot/src/main/java/org/example/fjencinas/boot/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot/src/main/java/org/example/fjencinas/boot/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/entity/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/repository/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/repository/Read.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/usecase/ItemUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/usecase/ItemUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/h2-infrastructure/src/main/java/org/example/fjencinas/h2/mapper/ItemH2Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/h2-infrastructure/src/main/java/org/example/fjencinas/h2/mapper/ItemH2Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/h2-infrastructure/src/main/java/org/example/fjencinas/h2/repository/ItemH2Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/h2-infrastructure/src/main/java/org/example/fjencinas/h2/repository/ItemH2Repository.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +79,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "actions.on.save"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
