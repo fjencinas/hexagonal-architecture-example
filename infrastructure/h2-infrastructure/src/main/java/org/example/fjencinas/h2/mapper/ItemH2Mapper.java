@@ -8,5 +8,5 @@ import org.mapstruct.Mapper;
 public interface ItemH2Mapper {
     ItemH2Entity fromDomain(Item item);
 
-    Item fromDomain(ItemH2Entity itemH2Entity);
+    Item toDomain(ItemH2Entity itemH2Entity);
 }
