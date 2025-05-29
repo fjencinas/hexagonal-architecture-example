@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77b14a27-771a-4f9b-9155-1a1fde20dbb9" name="Changes" comment="Refactor project structure and update dependencies for h2-infrastructure module">
+    <list default="true" id="77b14a27-771a-4f9b-9155-1a1fde20dbb9" name="Changes" comment="Refactor application structure and enhance item handling with JPA integration">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot/src/main/java/org/example/fjencinas/boot/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot/src/main/java/org/example/fjencinas/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/entity/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/fjencinas/application/ItemUseCaseImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot/src/main/java/org/example/fjencinas/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot/src/main/java/org/example/fjencinas/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boot/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/repository/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/repository/Read.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/h2-infrastructure/src/main/java/org/example/fjencinas/h2/adapter/ItemH2ReadAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/h2-infrastructure/src/main/java/org/example/fjencinas/h2/adapter/ItemH2ReadAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/h2-infrastructure/src/main/java/org/example/fjencinas/h2/entity/ItemH2Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/h2-infrastructure/src/main/java/org/example/fjencinas/h2/entity/ItemH2Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/h2-infrastructure/src/main/java/org/example/fjencinas/h2/mapper/ItemH2Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/h2-infrastructure/src/main/java/org/example/fjencinas/h2/mapper/ItemH2Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/h2-infrastructure/src/main/java/org/example/fjencinas/h2/repository/ItemH2Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/h2-infrastructure/src/main/java/org/example/fjencinas/h2/repository/ItemH2Repository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +37,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -70,7 +72,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.DemoApplication.executor": "Run",
-    "Application.org.example.fjencinas.DemoApplication.executor": "Debug",
+    "Application.org.example.fjencinas.DemoApplication.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.hexagonal-architecture-example [clean...].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -84,7 +86,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "actions.on.save"
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -155,10 +157,36 @@
     <option name="OPEN_GENERIC_TABS">
       <map>
         <entry key="a23be00e-1f6a-4129-ba8b-257d9efc7fd6" value="TOOL_WINDOW" />
+        <entry key="2a277ee1-0c28-475a-a48c-38e5c049689c" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="2a277ee1-0c28-475a-a48c-38e5c049689c">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
         <entry key="a23be00e-1f6a-4129-ba8b-257d9efc7fd6">
           <value>
             <State>
@@ -199,14 +227,6 @@
           <url>file://$PROJECT_DIR$/infrastructure/src/main/java/org/example/fjencinas/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/boot/src/main/java/org/example/fjencinas/DemoApplication.java</url>
-          <line>23</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

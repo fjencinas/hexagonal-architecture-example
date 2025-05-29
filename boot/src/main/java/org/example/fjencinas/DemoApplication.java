@@ -21,6 +21,6 @@ public class DemoApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        read.read("1").ifPresent(item -> System.out.println("Item found: " + item.getName()));
+        read.findById("1").ifPresent(item -> System.out.println("Item found: " + item));
     }
 }
