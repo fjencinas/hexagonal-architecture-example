@@ -1,16 +1,17 @@
-package org.example.fjencinas.h2.repository;
+package org.example.fjencinas.h2.adapter;
 
 import lombok.RequiredArgsConstructor;
 import org.example.fjencinas.domain.entity.Item;
 import org.example.fjencinas.domain.repository.Read;
 import org.example.fjencinas.h2.mapper.ItemH2Mapper;
+import org.example.fjencinas.h2.repository.ItemH2Repository;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
 @Repository
 @RequiredArgsConstructor
-public class ItemH2Read implements Read {
+public class ItemH2ReadAdapter implements Read {
 
     private final ItemH2Repository itemH2Repository;
 

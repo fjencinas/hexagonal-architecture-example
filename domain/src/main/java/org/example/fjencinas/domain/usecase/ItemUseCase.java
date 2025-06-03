@@ -6,6 +6,8 @@ import java.util.Optional;
 
 public interface ItemUseCase {
 
-    Optional<Item> findItem(Item item);
+    Optional<Item> createItem(Item item);
+
+    Optional<Item> findItem(String id);
 
 }
