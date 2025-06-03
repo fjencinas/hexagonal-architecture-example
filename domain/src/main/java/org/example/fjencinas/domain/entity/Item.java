@@ -10,6 +10,7 @@ import java.util.UUID;
 @Builder(toBuilder = true)
 public class Item {
     private UUID uuid;
+    private String code;
     private String name;
     private JsonNode data;
 }
