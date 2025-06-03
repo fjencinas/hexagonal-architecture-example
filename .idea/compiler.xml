@@ -7,15 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="application" />
-        <module name="h2-infrastructure" />
-        <module name="domain" />
       </profile>
       <profile name="Annotation profile for hexagonal-architecture-example" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="application" />
+        <module name="h2-infrastructure" />
+        <module name="domain" />
+      </profile>
+      <profile name="Annotation profile for boot" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
         <module name="boot" />
@@ -28,6 +37,7 @@
       <module name="boot" options="-parameters" />
       <module name="domain" options="-parameters" />
       <module name="h2-infrastructure" options="-parameters" />
+      <module name="hexagonal-architecture-example" options="" />
       <module name="infrastructure" options="" />
     </option>
   </component>

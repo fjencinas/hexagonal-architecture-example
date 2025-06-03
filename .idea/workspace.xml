@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77b14a27-771a-4f9b-9155-1a1fde20dbb9" name="Changes" comment="Refactor project structure and update dependencies for h2-infrastructure module">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/fjencinas/application/ItemUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/example/fjencinas/application/ItemUseCaseImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot/src/main/java/org/example/fjencinas/boot/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/boot/src/main/java/org/example/fjencinas/boot/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/entity/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/repository/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/repository/Read.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/usecase/ItemUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/fjencinas/domain/usecase/ItemUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/h2-infrastructure/src/main/java/org/example/fjencinas/h2/mapper/ItemH2Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/h2-infrastructure/src/main/java/org/example/fjencinas/h2/mapper/ItemH2Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/h2-infrastructure/src/main/java/org/example/fjencinas/h2/repository/ItemH2Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/h2-infrastructure/src/main/java/org/example/fjencinas/h2/repository/ItemH2Repository.java" afterDir="false" />
-    </list>
+    <list default="true" id="77b14a27-771a-4f9b-9155-1a1fde20dbb9" name="Changes" comment="Refactor application structure and enhance item handling with JPA integration" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,8 +21,17 @@
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -66,11 +66,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.DemoApplication.executor": "Run",
+    "Application.org.example.fjencinas.DemoApplication.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.hexagonal-architecture-example [clean...].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/branch-01",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Javi Encinas/.jdks/openjdk-24",
@@ -93,8 +94,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.fjencinas.boot.DemoApplication" />
+    <configuration name="org.example.fjencinas.DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.fjencinas.DemoApplication" />
       <module name="boot" />
       <extension name="coverage">
         <pattern>
@@ -108,7 +109,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DemoApplication" />
+        <item itemvalue="Application.org.example.fjencinas.DemoApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -137,13 +138,84 @@
       <option name="project" value="LOCAL" />
       <updated>1747910838657</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refactor application structure and enhance item handling with JPA integration">
+      <option name="closed" value="true" />
+      <created>1748940206788</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748940206788</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="a23be00e-1f6a-4129-ba8b-257d9efc7fd6" value="TOOL_WINDOW" />
+        <entry key="2a277ee1-0c28-475a-a48c-38e5c049689c" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="2a277ee1-0c28-475a-a48c-38e5c049689c">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+        <entry key="a23be00e-1f6a-4129-ba8b-257d9efc7fd6">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <MESSAGE value="Refactor project structure and update dependencies for h2-infrastructure module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor project structure and update dependencies for h2-infrastructure module" />
+    <MESSAGE value="Refactor application structure and enhance item handling with JPA integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor application structure and enhance item handling with JPA integration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

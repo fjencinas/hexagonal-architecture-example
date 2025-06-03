@@ -5,5 +5,5 @@ import org.example.fjencinas.domain.entity.Item;
 import java.util.Optional;
 
 public interface Read {
-    Optional<Item> find(String id);
+    Optional<Item> findById(String id);
 }
