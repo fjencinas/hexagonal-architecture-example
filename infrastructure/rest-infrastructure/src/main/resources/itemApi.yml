@@ -1,0 +1,47 @@
+openapi: 3.0.3
+info:
+  title: API de Items
+  version: 1.0.0
+paths:
+  /items:
+    post:
+      summary: Guardar un nuevo Item
+      operationId: saveItem
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ItemRequest'
+      responses:
+        '200':
+          description: Item guardado correctamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ItemResponse'
+        '400':
+          description: Petición inválida
+components:
+  schemas:
+    ItemRequest:
+      type: object
+      properties:
+        name:
+          type: string
+        data:
+          type: object
+          additionalProperties: true
+      required:
+        - name
+        - data
+    ItemResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        data:
+          type: object
+          additionalProperties: true

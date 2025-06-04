@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>h2-infrastructure</module>
+        <module>rest-infrastructure</module>
     </modules>
 
     <properties>
