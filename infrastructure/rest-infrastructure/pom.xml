@@ -62,7 +62,7 @@
                             <modelPackage>org.example.fjencinas.rest.openapi.model</modelPackage>
                             <generateModelTests>false</generateModelTests>
                             <generateApiTests>false</generateApiTests>
-                            <!--  <generateSupportingFiles>false</generateSupportingFiles>-->
+                            <!-- <generateSupportingFiles>false</generateSupportingFiles>-->
                             <configOptions>
                                 <interfaceOnly>true</interfaceOnly>
                                 <useJakartaEe>true</useJakartaEe>
