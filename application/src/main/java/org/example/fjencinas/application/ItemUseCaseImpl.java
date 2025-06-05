@@ -7,6 +7,7 @@ import org.example.fjencinas.domain.repository.Read;
 import org.example.fjencinas.domain.usecase.ItemUseCase;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -21,10 +22,14 @@ public class ItemUseCaseImpl implements ItemUseCase {
         return create.save(item);
     }
 
-
     @Override
     public Optional<Item> findItem(String id) {
         return read.find(id);
+    }
+
+    @Override
+    public List<Item> findItem() {
+        return read.find();
     }
 
 }

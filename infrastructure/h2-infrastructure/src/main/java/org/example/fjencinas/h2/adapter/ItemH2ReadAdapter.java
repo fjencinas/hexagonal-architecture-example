@@ -7,6 +7,7 @@ import org.example.fjencinas.h2.mapper.ItemH2Mapper;
 import org.example.fjencinas.h2.repository.ItemH2Repository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Repository
@@ -20,6 +21,11 @@ public class ItemH2ReadAdapter implements Read {
     @Override
     public Optional<Item> find(String id) {
         return itemH2Repository.findById(Long.valueOf(id)).map(itemH2Mapper::toDomain);
+    }
+
+    @Override
+    public List<Item> find() {
+        return itemH2Repository.findAll().stream().map(itemH2Mapper::toDomain).toList();
     }
 
 }
