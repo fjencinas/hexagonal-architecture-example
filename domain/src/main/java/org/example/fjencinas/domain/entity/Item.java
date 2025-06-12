@@ -9,8 +9,10 @@ import java.util.UUID;
 @Data
 @Builder(toBuilder = true)
 public class Item {
-    private UUID uuid;
+    @Builder.Default
+    private UUID uuid = UUID.randomUUID();
     private String id;
     private String name;
     private JsonNode data;
 }
+
