@@ -1,4 +1,4 @@
-package org.example.fjencinas.rest.controller;
+package org.example.fjencinas.rest.adapter;
 
 import lombok.RequiredArgsConstructor;
 import org.example.fjencinas.domain.entity.Item;
@@ -16,7 +16,7 @@ import java.util.Optional;
 
 @RestController
 @RequiredArgsConstructor
-public class ItemController implements ItemsApi {
+public class ItemRestAdapter implements ItemsApi {
 
     private final ItemUseCase itemUseCase;
 
